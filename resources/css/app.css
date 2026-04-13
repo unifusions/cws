@@ -9,7 +9,7 @@
 
 @theme {
     --font-sans:
-        'Instrument Sans', ui-sans-serif, system-ui, sans-serif,
+        'DM Sans', ui-sans-serif, system-ui, sans-serif,
         'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
         'Noto Color Emoji';
 
@@ -17,6 +17,7 @@
     --radius-md: calc(var(--radius) - 2px);
     --radius-sm: calc(var(--radius) - 4px);
 
+    --color-accent: var(--accent);
     --color-background: var(--background);
     --color-foreground: var(--foreground);
 
@@ -36,7 +37,8 @@
     --color-muted-foreground: var(--muted-foreground);
 
     --color-accent: var(--accent);
-    --color-accent-foreground: var(--accent-foreground);
+    --color-accent-secondary: var(--accent-secondary);
+    /* --color-accent-foreground: var(--accent-foreground); */
 
     --color-destructive: var(--destructive);
     --color-destructive-foreground: var(--destructive-foreground);
@@ -62,6 +64,9 @@
 }
 
 :root {
+    /* --accent: oklch(0.64 0.23 40.2); */
+    --accent : oklch(0.5608 0.2232 23.55);
+    --accent-secondary: oklch(0.64 0.23 40.2);
     --background: oklch(1 0 0);
     --foreground: oklch(0.145 0 0);
     --card: oklch(1 0 0);
@@ -74,7 +79,7 @@
     --secondary-foreground: oklch(0.205 0 0);
     --muted: oklch(0.97 0 0);
     --muted-foreground: oklch(0.556 0 0);
-    --accent: oklch(0.97 0 0);
+    /* --accent: oklch(0.97 0 0); */
     --accent-foreground: oklch(0.205 0 0);
     --destructive: oklch(0.577 0.245 27.325);
     --destructive-foreground: oklch(0.577 0.245 27.325);
@@ -98,6 +103,8 @@
 }
 
 .dark {
+
+   --accent: oklch(0.64 0.23 40.2);
     --background: oklch(0.145 0 0);
     --foreground: oklch(0.985 0 0);
     --card: oklch(0.145 0 0);
@@ -140,4 +147,17 @@
     body {
         @apply bg-background text-foreground;
     }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
 }

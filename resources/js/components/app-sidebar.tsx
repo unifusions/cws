@@ -16,6 +16,7 @@ import {
 } from '@/components/ui/sidebar';
 import { dashboard } from '@/routes';
 import type { NavItem } from '@/types';
+import formleads from '@/routes/formleads';
 
 export function AppSidebar() {
     const page = usePage();
@@ -29,6 +30,11 @@ export function AppSidebar() {
             href: dashboardUrl,
             icon: LayoutGrid,
         },
+        {
+            title: 'Contact Form',
+            href: formleads.index(),
+            icon: BookOpen,
+        }
     ];
 
     const footerNavItems: NavItem[] = [
