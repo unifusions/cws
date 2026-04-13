@@ -12,7 +12,7 @@ const clients = [
     },
     {
         name: "Future Works",
-        url: "/images/clients/future-works-logo.png"
+        url: "/images/clients/fux.png"
     },
 
 
@@ -26,7 +26,7 @@ const clients = [
     },
     {
         name: "Knitech Industries",
-        url: "/images/clients/knitech-industries.png"
+        url: "/images/clients/knitech.png"
     },
 
      {
@@ -56,24 +56,24 @@ const clients = [
 
        {
         name: "PYK Yoga & Astrology",
-        url: "/images/clients/pyk-client-logo.png"
+        url: "/images/clients/pyk.png"
     },
-    {
-        name:"Grass Root",
-        url: "/images/clients/grassroot-logo.png"
-    },
-    {
-        name:"Smart Nxt",
-        url: "/images/clients/smart-nxt.png"
-    },
-    {
-        name:"Strikerz",
-        url: "/images/clients/strikerz.png"
-    },
-    {
-        name:"Brooks Enviro Engineering",
-        url: "/images/clients/bee-1.png"
-    }
+    // {
+    //     name:"Grass Root",
+    //     url: "/images/clients/grdf.png"
+    // },
+    // {
+    //     name:"Smart Nxt",
+    //     url: "/images/clients/smart-nxt.png"
+    // },
+    // {
+    //     name:"Strikerz",
+    //     url: "/images/clients/strikerz.png"
+    // },
+    // {
+    //     name:"Brooks Enviro Engineering",
+    //     url: "/images/clients/bee-1.png"
+    // }
 
    
 ]
@@ -81,7 +81,7 @@ const clients = [
 export default function ClientSection() {
     return (
         <div className="  py-16 px-12 ">
-            <div className="grid grid-cols-1 md:grid-cols-7 gap-6">
+            <div className="grid grid-cols-1 xl:grid-cols-7 gap-6">
                 <div className="col-span-2 text-3xl font-semibold tracking-tighter ">
                     <div className="text-base uppercase border-b border-foreground/10 me-8 flex items-center gap-6 pb-3 mb-3">
                         <span>Our Clients</span> <ArrowRight className="w-5 h-5  " />
@@ -93,7 +93,7 @@ export default function ClientSection() {
                 </div>
 
                 <div className="col-span-4 md:col-span-5">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-16 ">
+                    <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-12 ">
                         {clients.map((client) => (
                             <div className="bg-white rounded-lg p-6 text-center  ">
                                 <img src={client.url} alt={client.name} className="max-h-15" />

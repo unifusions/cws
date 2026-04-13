@@ -10,7 +10,7 @@ const AboutSection = forwardRef((props, ref) => {
                 style={{ background: "url(/images/noise.gif)" }}>
                 {/* <img src="/images/noise.gif" alt="" className="object-cover h-full w-full" /> */}
             </div>
-            <div className=" p-8 md:p-16 grid grid-cols-1 md:grid-cols-5 gap-6 justify-between  items-center  ">
+            <div className=" p-8 md:p-16 grid grid-cols-1 lg:grid-cols-5 gap-6 justify-between  items-center  ">
                 <div className="col-span-3">
                     <StaggerText text="Creativity. Inovation. Determination" as="div" className="text-xs md:text-base  tracking-tight uppercase " />
                     <div></div>

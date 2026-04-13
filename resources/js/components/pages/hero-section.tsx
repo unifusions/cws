@@ -33,7 +33,7 @@ export default function HeroSection({ learnMoreClick }) {
             />
             {/* Center Content */}
 
-            <motion.div className="relative z-10 h-full flex items-start pt-40 md:pt-0 lg:items-center justify-center z-21"
+            <motion.div className="relative z-10 h-full flex  items-start pt-40 md:pt-0  md:items-center justify-center z-21"
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{
@@ -41,7 +41,7 @@ export default function HeroSection({ learnMoreClick }) {
                     delay: 0.2,
                 }}>
                 <div>
-                    <div className=" mx-auto max-w-[200px] md:max-w-sm mb-9">
+                    <div className=" mx-auto max-w-[200px] xl:max-w-sm mb-9">
                         <AppLogo color="dark"   />
                     </div>
 

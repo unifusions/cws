@@ -19,9 +19,17 @@ type Props = {
 export function UserMenuContent({ user }: Props) {
     const cleanup = useMobileNavigation();
 
-    const handleLogout = () => {
+    const handleLogout = (e: React.MouseEvent) => {
+       e.preventDefault(); 
         cleanup();
-        router.flushAll();
+       
+        router.post(logout().url, {}, {
+        onFinish: () => {
+            
+            window.location.href = '/'; // 🔥 force full reload
+        }
+    });
+
     };
 
     return (
@@ -49,7 +57,7 @@ export function UserMenuContent({ user }: Props) {
             <DropdownMenuItem asChild>
                 <Link
                     className="block w-full cursor-pointer"
-                    href={logout()}
+                    // href={logout()}
                     as="button"
                     onClick={handleLogout}
                     data-test="logout-button"

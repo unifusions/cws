@@ -4,9 +4,9 @@ import { initializeTheme } from '@/hooks/use-appearance';
 import AppLayout from '@/layouts/app-layout';
 import AuthLayout from '@/layouts/auth-layout';
 import SettingsLayout from '@/layouts/settings/layout';
-import GuestLayout from './layouts/guest-layout';
+ 
 
-import './islands';
+ 
 const appName = 'Unifusions';
 
 createInertiaApp({

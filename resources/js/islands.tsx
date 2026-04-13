@@ -1,10 +1,10 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import Welcome from "./pages/welcome";
-import Contact from "./pages/contact";
+import Welcome from "./static/welcome";
+import Contact from "./static/contact";
 import Error404 from "./pages/errors/error-404";
-import Privacy from "./pages/privacy";
-import Uniform from "./pages/uniform";
+import Privacy from "./static/privacy";
+import Uniform from "./static/uniform";
 
  
 const components = {
