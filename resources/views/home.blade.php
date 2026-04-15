@@ -14,6 +14,10 @@
   gtag('config', 'G-KL2QTD4LC9');
 </script>
     <title>Unifusions</title>
+
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" />
+                <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
  <meta property="og:url" content="https://unifusions.com/" /><meta property="og:site_name" content="Unifusions" /><meta property="og:locale" content="en_US" /><meta property="og:type" content="website" /><meta property="og:title" content="Unifusions | True One-stop solution provider" /><meta property="og:description" content="Pushing past the hardest of challenges. Getting better &amp; better. Unifusions was forged from this mindset. It’s this passion that makes us successful." /><meta name="twitter:card" content="summary" /><meta name="twitter:title" content="Unifusions | True One-stop solution provider" /><meta name="twitter:description" content="Pushing past the hardest of challenges. Getting better &amp; better. Unifusions was forged from this mindset. It’s this passion that makes us successful." />
     <link rel="icon" href="/images/fav-icon.png">
    @viteReactRefresh
